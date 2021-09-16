@@ -1,6 +1,14 @@
 <html>
     <title>WebApps Assignment_03</title>
-    <head> </head>
+    <head> 
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            }
+        </style>
+    </head>
     <body>
         <h1>Anand Reddy Katkuri</h1>
 
@@ -33,6 +41,142 @@
 
 <a href="aboutme.html ">aboutme file</a>
 
+<hr>
 
-    </body>
+<h3> Recommeneded Drinks</h3>
+
+The below table shows the recommended drinks and their available location and purchase value.
+
+<table>
+    <tr>
+    <th>Drinks</th>
+    <th>Location</th>
+    <th>Price(INR)</th>
+    </tr>
+    
+    <tr>
+        <td>Lassi</td>
+        <td>Delhi</td>
+        <td>45</td>
+    </tr>
+    
+    <tr>
+    <td>Milkshake</td>
+    <td>Sikkim</td>
+    <td>25</td>
+    </tr>
+    
+    <tr>
+    <td>Vodka</td>
+    <td>Chennai</td>
+    <td>650</td>
+    </tr>
+    
+    <tr>
+    <td>Sprite</td>
+    <td>Goa</td>
+    <td>245</td>
+    </tr>
+    
+    </table>
+
+    <hr>
+
+    <h4> Geometry </h4>
+    <blockquote cite = "https://en.wikipedia.org/wiki/Geometry">Geometry (from the Ancient Greek: γεωμετρία; geo- "earth", -metron "measurement") is, with arithmetic, one of the oldest branches of mathematics. It is concerned with properties of space that are related with distance, shape, size, and relative position of figures.[1] A mathematician who works in the field of geometry is called a geometer.</blockquote>
+    <a href = "https://en.wikipedia.org/wiki/Geometry"> Geometry </a>
+    <pre>
+    
+        struct point2d {
+            ftype x, y;
+            point2d() {}
+            point2d(ftype x, ftype y): x(x), y(y) {}
+            point2d& operator+=(const point2d &t) {
+                x += t.x;
+                y += t.y;
+                return *this;
+            }
+            point2d& operator-=(const point2d &t) {
+                x -= t.x;
+                y -= t.y;
+                return *this;
+            }
+            point2d& operator*=(ftype t) {
+                x *= t;
+                y *= t;
+                return *this;
+            }
+            point2d& operator/=(ftype t) {
+                x /= t;
+                y /= t;
+                return *this;
+            }
+            point2d operator+(const point2d &t) const {
+                return point2d(*this) += t;
+            }
+            point2d operator-(const point2d &t) const {
+                return point2d(*this) -= t;
+            }
+            point2d operator*(ftype t) const {
+                return point2d(*this) *= t;
+            }
+            point2d operator/(ftype t) const {
+                return point2d(*this) /= t;
+            }
+        };
+        point2d operator*(ftype a, point2d b) {
+            return b * a;
+        }
+        And 3D points:
+        
+        struct point3d {
+            ftype x, y, z;
+            point3d() {}
+            point3d(ftype x, ftype y, ftype z): x(x), y(y), z(z) {}
+            point3d& operator+=(const point3d &t) {
+                x += t.x;
+                y += t.y;
+                z += t.z;
+                return *this;
+            }
+            point3d& operator-=(const point3d &t) {
+                x -= t.x;
+                y -= t.y;
+                z -= t.z;
+                return *this;
+            }
+            point3d& operator*=(ftype t) {
+                x *= t;
+                y *= t;
+                z *= t;
+                return *this;
+            }
+            point3d& operator/=(ftype t) {
+                x /= t;
+                y /= t;
+                z /= t;
+                return *this;
+            }
+            point3d operator+(const point3d &t) const {
+                return point3d(*this) += t;
+            }
+            point3d operator-(const point3d &t) const {
+                return point3d(*this) -= t;
+            }
+            point3d operator*(ftype t) const {
+                return point3d(*this) *= t;
+            }
+            point3d operator/(ftype t) const {
+                return point3d(*this) /= t;
+            }
+        };
+        point3d operator*(ftype a, point3d b) {
+            return b * a;
+        }
+    
+    
+    </pre>
+    
+    
+</body>
 </html>
